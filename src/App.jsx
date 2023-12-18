@@ -5,11 +5,19 @@ import "./App.css";
 export default function App() {
   const [dice, setDice] = React.useState(allNewDice());
 
+  const randomNumbers = Array.from(
+    { length: 10 },
+    () => Math.floor(Math.random() * 6) + 1
+  );
+  console.log(randomNumbers);
+
   function allNewDice() {
-    const newDice = [];
-    for (let i = 0; i < 10; i++) {
-      newDice.push(Math.ceil(Math.random() * 6));
-    }
+    // creates an array of 10 random numbers
+    const newDice = Array.from(
+      { length: 10 },
+      () => Math.floor(Math.random() * 6) + 1
+    );
+
     return newDice;
   }
 
