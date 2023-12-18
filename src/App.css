@@ -7,7 +7,7 @@ main {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -36,7 +36,11 @@ main {
 button {
   padding: 10px 30px;
   background: #5035ff;
+  height: 50px;
+  width: 100px;
   outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
   color: #ffffff;
   border: none;
   margin-top: 26px;
